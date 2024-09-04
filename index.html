@@ -8,37 +8,38 @@
         <link rel="icon" href="assets/logo.ico" type="image/x-icon">
     </head>
     <body>
-        <h1>Custom Scoreboard Background</h1>
-        <div id="main">
-            <div id="container">
+        <header>
+            <h1>Custom Scoreboard Background</h1>
+        </header>
+        <main>
+            <section id="controls">
                 <div id="top-row">
-                    <input type="file" id="fileInput" name="file"
-                        accept=".png">
-                    <button id="createZip" style="display:none;">Create
-                        Texturepack</button>
+                    <input type="file" id="fileInput" name="file" accept=".png">
+                    <button id="createZip">Create Texturepack</button>
                 </div>
-                <div id="howto">
+                <section id="instructions">
                     <h2>How to use:</h2>
                     <ol>
                         <li>Click the "Choose File" button and select a .png
-                            image</li>
-                        <li>Click the "Create Texturepack" button</li>
-                        <li>Download the generated .zip file</li>
+                            image.</li>
+                        <li>Click the "Create Texturepack" button.</li>
+                        <li>Download the generated .zip file.</li>
                         <li>Place the .zip file in the "resourcepacks" folder of
-                            your Minecraft directory</li>
-                        <li>Enable the resource pack in the game</li>
+                            your Minecraft directory.</li>
+                        <li>Enable the resource pack in the game.</li>
                         <li>Enable the option to use the background in the
-                            SkyHanni config</li>
+                            SkyHanni
+                            config.</li>
                     </ol>
-                </div>
-            </div>
-            <div id="preview" style="display:none;">
+                </section>
+            </section>
+            <section id="preview" class="hidden">
                 <h2>Preview:</h2>
                 <div id="previewContainer" class="resizable">
-                    <img id="previewImage">
+                    <img id="previewImage" alt="Preview">
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
