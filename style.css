@@ -18,6 +18,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -45,33 +46,38 @@ header {
     justify-content: center;
 }
 
-#fileInput, #createZip {
+#fileInput {
+    display: none;
+}
+
+#fileInputLabel, #createZip {
     flex: 1;
     padding: 10px 15px;
     border-radius: 0.5rem;
     border: 2px solid #333;
     background-color: #3c3c3c;
     color: white;
+    font-family: monospace;
+    font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-#fileInput:hover, #createZip:hover {
+#fileInputLabel:hover, #createZip:hover {
     background-color: #4a4a4a;
 }
 
-#fileInput:active, #createZip:active {
+#fileInputLabel:active, #createZip:active {
     background-color: #555;
     transform: scale(0.98);
 }
 
-#fileInput::-webkit-file-upload-button {
+#fileInputLabel::-webkit-file-upload-button {
     visibility: hidden;
 }
 
-#fileInput::before {
-    content: 'Choose File';
+#fileInputLabel::before {
     display: inline-block;
     background-color: #3c3c3c;
     border: 2px solid #333;
@@ -81,11 +87,11 @@ header {
     text-align: center;
 }
 
-#fileInput:hover::before {
+#fileInputLabel:hover::before {
     background-color: #4a4a4a;
 }
 
-#fileInput:active::before {
+#fileInputLabel:active::before {
     background-color: #555;
 }
 
