@@ -1,6 +1,10 @@
 const button = document.getElementById('createZip');
 const fileInput = document.getElementById('fileInput');
 
+const preview = document.getElementById('preview');
+const previewContainer = document.getElementById('previewContainer');
+const previewImage = document.getElementById('previewImage');
+
 const packMeta = `{
     "pack": {
         "pack_format": 1,
@@ -45,11 +49,44 @@ button.addEventListener('click', async function () {
 fileInput.addEventListener('change', function () {
     if (fileInput.files.length === 0) {
         button.style.display = "none";
+        preview.style.display = "none";
     } else {
         button.style.display = "block";
+        preview.style.display = "block";
+        previewContainer.style.width = "275px";
+        previewContainer.style.height = "500px";
+        previewImage.src = URL.createObjectURL(fileInput.files[0]);
     }
 });
 
 document.getElementById('howto').addEventListener('click', function () {
     this.classList.toggle('active');
 });
+
+previewContainer.addEventListener("mousedown", function (e) {
+    const startX = e.clientX;
+    const startY = e.clientY;
+
+    const startWidth = previewContainer.offsetWidth;
+    const startHeight = previewContainer.offsetHeight;
+
+    function doDrag(e) {
+        const newWidth = startWidth - (e.clientX - startX);
+        const newHeight = startHeight - (e.clientY - startY);
+
+        previewContainer.style.width = newWidth + "px";
+        previewContainer.style.height = newHeight + "px";
+        previewImage.style.width = "100%";
+        previewImage.style.height = "100%";
+    }
+
+    function stopDrag() {
+        document.removeEventListener("mousemove", doDrag, false);
+        document.removeEventListener("mouseup", stopDrag, false);
+    }
+
+    document.addEventListener("mousemove", doDrag, false);
+    document.addEventListener("mouseup", stopDrag, false);
+
+    e.preventDefault();
+}, false);
