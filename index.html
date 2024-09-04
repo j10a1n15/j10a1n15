@@ -14,10 +14,12 @@
         <main>
             <section id="controls">
                 <div id="top-row">
-                    <label for="fileInput" id="fileInputLabel">Choose
+                    <label for="fileInput" id="fileInputLabel"
+                        class="button-design">Choose
                         File</label>
                     <input type="file" id="fileInput" name="file" accept=".png">
-                    <button id="createZip" style="display:none;">Create
+                    <button id="createZip" style="display:none;"
+                        class="button-design">Create
                         Texturepack</button>
                 </div>
                 <section id="instructions">
@@ -36,9 +38,10 @@
                     </ol>
                 </section>
             </section>
-            <section id="preview" class="hidden">
+            <section id="preview" style="display:none;">
                 <h2>Preview:</h2>
                 <p>Drag to resize the preview.</p>
+                <button id="resetPreview" class="button-design">Reset</button>
                 <div id="previewContainer" class="resizable">
                     <img id="previewImage" alt="Preview">
                 </div>

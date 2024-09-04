@@ -1,5 +1,6 @@
 const button = document.getElementById('createZip');
 const fileInput = document.getElementById('fileInput');
+const resetPreviewButton = document.getElementById('resetPreview');
 const preview = document.getElementById('preview');
 const previewContainer = document.getElementById('previewContainer');
 const previewImage = document.getElementById('previewImage');
@@ -46,16 +47,21 @@ button.addEventListener('click', () => {
 fileInput.addEventListener('change', () => {
     if (fileInput.files.length === 0) {
         button.style.display = "none";
-        preview.classList.add('hidden');
+        preview.style.display = "none";
     } else {
         button.style.display = "block";
-        preview.classList.remove('hidden');
+        preview.style.display = "block";
         previewImage.src = URL.createObjectURL(fileInput.files[0]);
     }
 });
 
 document.getElementById('instructions').addEventListener('click', function () {
     this.classList.toggle('active');
+});
+
+resetPreviewButton.addEventListener('click', () => {
+    previewContainer.style.width = "275px";
+    previewContainer.style.height = "500px";
 });
 
 previewContainer.addEventListener("mousedown", (e) => {

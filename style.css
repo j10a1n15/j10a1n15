@@ -52,6 +52,9 @@ header {
 
 #fileInputLabel, #createZip {
     flex: 1;
+}
+
+.button-design {
     padding: 10px 15px;
     border-radius: 0.5rem;
     border: 2px solid #333;
@@ -64,11 +67,11 @@ header {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-#fileInputLabel:hover, #createZip:hover {
+.button-design:hover {
     background-color: #4a4a4a;
 }
 
-#fileInputLabel:active, #createZip:active {
+.button-design:active {
     background-color: #555;
     transform: scale(0.98);
 }
@@ -133,10 +136,6 @@ header {
 /* Preview section styles */
 #preview {
     text-align: center;
-}
-
-.hidden {
-    display: none;
 }
 
 #previewContainer {
