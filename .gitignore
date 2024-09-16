@@ -1,4 +1,5 @@
 # Use **/*.* since if a directory is ignored, children of that directory *cannot* be unignored using ! again.
+.idea/workspace.xml
 .idea/**/*.*
 !.idea/icon.svg
 !.idea/dictionaries/default_user.xml
