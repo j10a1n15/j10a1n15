@@ -13,6 +13,12 @@ body {
     color: white;
 }
 
+a {
+    color: rgb(204, 204, 204);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Main container styles */
 main {
     display: flex;
