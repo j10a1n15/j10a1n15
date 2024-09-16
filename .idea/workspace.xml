@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b225b369-ecaa-4eb2-b842-c866ae40a442" name="Changes" comment="this thing">
+    <list default="true" id="b225b369-ecaa-4eb2-b842-c866ae40a442" name="Changes" comment="almost full reset main page css">
+      <change afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/background.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/background.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +35,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2mAOQzR1wMmS24RQ1pZcptK90vB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726515903487</updated>
       <workItem from="1726515904787" duration="456000" />
-      <workItem from="1726516434177" duration="241000" />
+      <workItem from="1726516434177" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="formatting (in webstorm)">
       <option name="closed" value="true" />
@@ -86,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726516342676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="almost full reset main page css">
+      <option name="closed" value="true" />
+      <created>1726516771983</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726516771983</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="formatting (in webstorm)" />
     <MESSAGE value="this thing" />
-    <option name="LAST_COMMIT_MESSAGE" value="this thing" />
+    <MESSAGE value="almost full reset main page css" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost full reset main page css" />
   </component>
 </project>
