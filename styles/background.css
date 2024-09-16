@@ -1,4 +1,36 @@
-/* Controls */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+}
+
+/* Controls section styles */
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #242424;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #333;
+}
+
 #top-row {
     display: flex;
     gap: 10px;
