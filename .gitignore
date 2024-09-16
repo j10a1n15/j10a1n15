@@ -1,0 +1,5 @@
+# Use **/*.* since if a directory is ignored, children of that directory *cannot* be unignored using ! again.
+.idea/**/*.*
+!.idea/icon.svg
+!.idea/dictionaries/default_user.xml
+.vscode/
