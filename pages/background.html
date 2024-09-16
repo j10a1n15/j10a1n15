@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Custom Scoreboard Background</title>
-        <link rel="stylesheet" href="../styles/index.css">
-        <link rel="stylesheet" href="../styles/background.css">
-        <link rel="icon" href="../assets/logo.ico" type="image/x-icon">
-    </head>
-    <body>
-        <header>
-            <h1>Custom Scoreboard Background</h1>
-        </header>
-        <main>
-            <section id="controls">
-                <div id="top-row">
-                    <label for="fileInput" id="fileInputLabel"
-                        class="button-design">Choose
-                        File</label>
-                    <input type="file" id="fileInput" name="file" accept=".png">
-                    <button id="createZip" style="display:none;"
-                        class="button-design">Create
-                        Texturepack</button>
-                </div>
-                <section id="instructions">
-                    <h2>How to use:</h2>
-                    <ol>
-                        <li>Click the "Choose File" button and select a .png
-                            image.</li>
-                        <li>Click the "Create Texturepack" button.</li>
-                        <li>Download the generated .zip file.</li>
-                        <li>Place the .zip file in the "resourcepacks" folder of
-                            your Minecraft directory.</li>
-                        <li>Enable the resource pack in the game.</li>
-                        <li>Enable the option to use the background in the
-                            SkyHanni
-                            config.</li>
-                    </ol>
-                </section>
-            </section>
-            <section id="preview" style="display:none;">
-                <h2>Preview:</h2>
-                <p>Drag to resize the preview.</p>
-                <button id="resetPreview" class="button-design">Reset</button>
-                <div id="previewContainer" class="resizable">
-                    <img id="previewImage" alt="Preview">
-                </div>
-            </section>
-        </main>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Custom Scoreboard Background</title>
+    <link href="../styles/index.css" rel="stylesheet">
+    <link href="../styles/background.css" rel="stylesheet">
+    <link href="../assets/logo.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+<header>
+    <h1>Custom Scoreboard Background</h1>
+</header>
+<main>
+    <section id="controls">
+        <div id="top-row">
+            <label class="button-design" for="fileInput" id="fileInputLabel">Choose File</label>
+            <input accept=".png" id="fileInput" name="file" type="file">
+            <button class="button-design" id="createZip" style="display:none;">Create Texturepack</button>
+        </div>
+        <section id="instructions">
+            <h2>How to use:</h2>
+            <ol>
+                <li>Click the "Choose File" button and select a .png image.</li>
+                <li>Click the "Create Texturepack" button.</li>
+                <li>Download the generated .zip file.</li>
+                <li>Place the .zip file in the "resourcepacks" folder of your Minecraft directory.</li>
+                <li>Enable the resource pack in the game.</li>
+                <li>Enable the option to use the background in the SkyHanni config.</li>
+            </ol>
+        </section>
+    </section>
+    <section id="preview" style="display:none;">
+        <h2>Preview:</h2>
+        <p>Drag to resize the preview.</p>
+        <button class="button-design" id="resetPreview">Reset</button>
+        <div class="resizable" id="previewContainer">
+            <img alt="Preview" id="previewImage">
+        </div>
+    </section>
+</main>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-        <script src="../scripts/background.js"></script>
-    </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+<script src="../scripts/background.js"></script>
+</body>
 </html>

@@ -29,10 +29,10 @@ button.addEventListener('click', () => {
         // Create assets directory structure and add the selected PNG
         const assetsFolder = zip.folder("assets");
         const skyhanniFolder = assetsFolder.folder("skyhanni");
-        skyhanniFolder.file("scoreboard.png", event.target.result.split(',')[1], { base64: true });
+        skyhanniFolder.file("scoreboard.png", event.target.result.split(',')[1], {base64: true});
 
         // Generate the zip and trigger download
-        zip.generateAsync({ type: "blob" })
+        zip.generateAsync({type: "blob"})
             .then((content) => {
                 const a = document.createElement('a');
                 a.href = URL.createObjectURL(content);
