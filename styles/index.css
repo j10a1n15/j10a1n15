@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    color: rgb(204, 204, 204);
+    color: lightgray;
     text-decoration: underline;
     cursor: pointer;
 }
