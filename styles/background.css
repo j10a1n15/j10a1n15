@@ -68,41 +68,6 @@ header {
     background-color: #555;
 }
 
-/* Instructions section styles */
-#instructions {
-    text-align: center;
-}
-
-#instructions ol {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    margin-top: 10px;
-}
-
-#instructions.active ol {
-    max-height: 500px;
-    transition: max-height 0.5s ease-in;
-}
-
-#instructions h2 {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    user-select: none;
-}
-
-#instructions h2::before {
-    content: "▶";
-    display: inline-block;
-    margin-right: 10px;
-    transition: transform 0.3s ease-out;
-}
-
-#instructions.active h2::before {
-    transform: rotate(90deg);
-}
-
 /* Preview section styles */
 #preview {
     text-align: center;

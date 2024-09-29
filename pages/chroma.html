@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Custom SkyHanni Chroma</title>
+    <link href="../styles/main.css" rel="stylesheet">
+    <link href="../styles/background.css" rel="stylesheet">
+    <link href="../styles/chroma.css" rel="stylesheet">
+    <link href="../assets/logo.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+<header>
+    <h1>Custom SkyHanni Chroma</h1>
+</header>
+<main>
+    <section id="controls">
+        <div>
+            <input type="text" id="colorInput" placeholder="Enter color (#abcdef)" class="text-input"/>
+            <button id="addColor" class="button-design">Add Color</button>
+            <div id="colorInfo"></div>
+        </div>
+        <div>
+            <button id="setMaxSaturation" class="button-design">Max Saturation</button>
+            <div id="saturationInfo">Max Saturation: Disabled</div>
+        </div>
+        <div>
+            <input type="number" id="interpolationLevel" placeholder="Interpolation" class="text-input"/>
+            <button id="setInterpolation" class="button-design">Set Interpolation</button>
+        </div>
+        <div>
+        <button id="generateShaders" class="button-design">Generate Shaders</button>
+        </div>
+        <section id="instructions">
+            <h2>Instructions:</h2>
+            <ol>
+                <li>Add Colors: Enter a hex color (e.g., #abcdef) and click "Add Color" to add it to the list.</li>
+                <li>Max Saturation:Click to toggle max saturation. When enabled, colors will appear more vibrant.</li>
+                <li>Set Interpolation: Enter a number to adjust how smoothly colors transition. Higher values = smoother.</li>
+                <li>Generate Shaders: After configuring, click "Generate Shaders" to create and download the shader files.</li>
+            </ol>
+        </section>
+    </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+<script src="../scripts/chroma.js"></script>
+<script src="../scripts/shaderScripts.js"></script>
+<script src="../scripts/utils.js"></script>
+</body>
+</html>

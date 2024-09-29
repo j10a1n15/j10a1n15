@@ -31,3 +31,62 @@ body {
     background-color: #555;
     transform: scale(0.98);
 }
+
+/* Text input styles */
+.text-input {
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    border: 2px solid #333;
+    background-color: #3c3c3c;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.text-input:focus {
+    background-color: #4a4a4a;
+    border: 2px solid #555;
+    outline: none;
+}
+
+/* Instructions section styles */
+#instructions {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+#instructions ol {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 10px;
+}
+
+#instructions.active ol {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+#instructions h2 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+#instructions h2::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease-out;
+}
+
+#instructions.active h2::before {
+    transform: rotate(90deg);
+}
+
