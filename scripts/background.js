@@ -64,13 +64,18 @@ const generateZip = function (scoreboardImage) {
 }
 
 fileInput.addEventListener('change', () => {
-    if (fileInput.files.length === 0) {
+    const fileList = fileInput.files;
+    if (!fileList[0].type.startsWith("image/")) {
+        alert("Please select an image file.");
+        return
+    }
+    if (fileList.length === 0) {
         button.style.display = "none";
         preview.style.display = "none";
     } else {
         button.style.display = "block";
         preview.style.display = "block";
-        previewImage.src = URL.createObjectURL(fileInput.files[0]);
+        previewImage.src = URL.createObjectURL(fileList[0]);
     }
 });
 
